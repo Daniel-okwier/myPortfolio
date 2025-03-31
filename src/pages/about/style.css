@@ -11,39 +11,101 @@
     border-color: var(--text-color) !important;
 }
 
-.progress-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 15px 0 20px;
+/* Base spacing and layout */
+.sec_sp {
+    margin-bottom: calc(3rem + 5.128vw);
+}
+
+.t_border {
+    border-color: var(--text-color) !important;
+}
+
+/* Table styles */
+.table td,
+.table th {
+    color: var(--text-color);
+}
+
+/* Skills Tags Styles */
+.skills-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 15px 0 30px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    box-shadow: var(--tag-shadow);
+    transition: all 0.2s ease;
     font-family: 'Raleway';
 }
 
-.progress {
-    height: 5px;
-    background: var(--secondary);
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--tag-shadow-hover);
 }
 
-.progress .progress-bar {
-    position: relative;
-    background: var(--text-color);
-    animation: animate-positive 2s;
-    overflow: visible;
-    opacity: 0.9;
+/* Services Section Styles */
+.service__title {
+    padding: 8px 0;
+    border-bottom: solid 2px var(--secondary-color);
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-.progress .progress-value {
-    position: absolute;
-    top: -30px;
-    right: 8px;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
+.service_desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.service_ {
+    margin-bottom: 2rem;
+}
+
+/* Titles and Headings */
+.section-title {
+    font-size: 45px;
+}
+
+.color_sec {
     color: var(--text-color);
 }
+
+/* Animations */
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
 
 @-webkit-keyframes animate-positive {
     0% {

@@ -2,13 +2,8 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  worktimeline,
-  skills,
-  services,
-} from "../../content_option";
+import { dataabout, meta, services } from "../../content_option";
+import Skills from '../../components/skills/index'; 
 
 export const About = () => {
   return (
@@ -35,63 +30,21 @@ export const About = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
+        
+        {/* Skills Component */}
+        <Skills />
+        
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
+            {services.map((data, i) => (
+              <div className="service_ py-4" key={i}>
+                <h5 className="service__title">{data.title}</h5>
+                <p className="service_desc">{data.description}</p>
+              </div>
+            ))}
           </Col>
         </Row>
       </Container>

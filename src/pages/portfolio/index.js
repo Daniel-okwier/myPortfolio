@@ -1,37 +1,41 @@
-import React from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import ProjectCard from './indexCards';
+import Particle from "../../components/Particle";
+import { meta, dataportfolio } from '../../content_option';
+import { FaGithub, FaGlobe } from 'react-icons/fa';
+import './style.css'
 
 export const Portfolio = () => {
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container fluid className="project-section">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>{" "}
+          <title>Portfolio | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4"> Portfolio </h1>{" "}
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <Particle />
+        <Container>
+          <h1 className="project-heading">
+            My Projects <strong className="purple"></strong>
+          </h1>
+          
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            {dataportfolio.map((project, index) => (
+              <Col md={4} className="project-card" key={index}>
+                <ProjectCard
+                  imgPath={project.img}
+                  title={project.title}
+                  description={project.description}
+                  ghLink={project.github}
+                  demoLink={project.link}
+                />
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </Container>
     </HelmetProvider>
   );
