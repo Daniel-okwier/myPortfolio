@@ -1,38 +1,16 @@
-### Description
+# Daniel Okwier - Portfolio
 
-A simple portfolio template for developer/designers built with React. 
+## About This Project
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
+A clean, responsive portfolio built with:
+- React.js
+- CSS3 (Flexbox/Grid)
+- EmailJS integration
+- PDF viewer for resume
+- Animated components
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+## Setup Instructions
 
-### Features
-
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
-
-### Setup
-
-Get the code
-
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
-
-<pre>yarn install</pre>
-
-
-Start the server
-
-<pre>yarn start</pre>
-
-### More
-
-Modify pages content in  `src/content_option.js`.
-
-### Thanks
-
-If you like this portfolio template don't forget give it a ⭐ 
+1. Clone the repository:
+```bash
+git clone https://github.com/Daniel-okwier/myPortfolio.git
