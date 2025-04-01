@@ -7,19 +7,27 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+import AnimatedCursor from "../hooks/AnimatedCursor";
+import ReactGA from 'react-ga4'; 
 import "./App.css";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", page: pathname }); 
   }, [pathname]);
+
   return props.children;
 }
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-M2G9RPD2PV"); 
+  }, []);
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">

@@ -8,6 +8,8 @@ A clean, responsive portfolio built with:
 - EmailJS integration
 - PDF viewer for resume
 - Animated components
+## Deployment
+[![Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com)
 
 ## Setup Instructions
 
