@@ -2,8 +2,7 @@
 import img1 from './assets/images/al1.png';
 import img2 from './assets/images/eva.png';
 import img3 from './assets/images/ama.png';
-import img4 from './assets/images/net.png';
-
+import img4 from './assets/images/donation.png';
 
 
 
@@ -49,6 +48,15 @@ const services = [
 
 
 const dataportfolio = [
+
+  {
+    img: img4,
+    title: "Teawun-charity",
+    description: "Developed a responsive donation application that integrates an online payment system. Leveraged React.js to create a dynamic user interface, enabling users to make donations easily. Incorporated Node.js for server-side functionality and utilized MySQL for efficient data management. Styled with Tailwind CSS to ensure a modern and appealing design, providing a seamless experience for users donating through the Chapa payment gateway.",
+    link: "",
+    github: "https://github.com/Daniel-okwier/Teawun-Charity/tree/newbranch"
+  },
+
   {
     img: img1, 
     title: "Anyuak E-learning",
@@ -69,14 +77,7 @@ const dataportfolio = [
     description: "Cloned the popular Amazon e-commerce app to showcase full-stack development skills. Implemented secure payment processing with Stripe API and created a dynamic product catalog featuring search, filtering, and sorting. Utilized Firebase for backend services, including user authentication.",
     link: "https://amazon-clone-dani.netlify.app/",
     //github: "https://github.com/yourname/project1"
-  },
-  {
-    img: img4,
-    title: "Netflix-Clone",
-   description: "Cloned a responsive web application simulating a Netflix-like experience. Utilized React.js to build a dynamic user interface that closely resembles the original platform. Integrated smooth transitions and animations to ensure a polished, interactive experience.",
-    link: "https://danielokwier.netlify.app/",
-    github: "https://github.com/Daniel-okwier/Netflix-project"
-  },
+  }
 ];
 
 const contactConfig = {
