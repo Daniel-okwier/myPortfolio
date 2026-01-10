@@ -1,5 +1,5 @@
 import img1 from './assets/images/al1.png';
-import img4 from './assets/images/DONA.png';
+import img4 from './assets/images/dona.png';
 import img5 from './assets/images/tpms.png'; 
 import img6 from './assets/images/zion.png'; 
 
@@ -90,7 +90,7 @@ const contactConfig = {
 const socialprofils = {
   linkedin: "https://www.linkedin.com/in/daniel-okweir/",
   github: "https://github.com/Daniel-okwier",
-    x: "https://x.com/DanielOkwier"
+    //x: "https://x.com/DanielOkwier"
 };
 
 export {
