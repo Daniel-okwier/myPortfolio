@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-import yourImg from '../../assets/images/pic1.png';
+import yourImg from "../../assets/images/pic1.png";
 import Particle from "../../components/Particle";
 import "./style.css";
 
@@ -17,19 +17,23 @@ export const Home = () => {
           <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
+
         <Particle />
+
         <Container fluid className="home-section">
           <Container className="home-content">
             <Row className="align-items-center">
               <Col md={7} className="home-header">
                 <h1 className="heading">
                   {introdata.title}{" "}
-                  <span className="wave" role="img" aria-labelledby="wave">
+                  <span role="img" aria-label="wave">
                     👋
                   </span>
                 </h1>
 
-                <p className="intro-description">{introdata.description}</p>
+                <h2 className="intro-description">
+                  {introdata.description}
+                </h2>
 
                 <div className="animated-text-container">
                   <Typewriter
@@ -42,8 +46,8 @@ export const Home = () => {
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 30,
-                      delay: 10,
-                      cursor: "_"
+                      delay: 15,
+                      cursor: "_",
                     }}
                   />
                 </div>
@@ -51,18 +55,12 @@ export const Home = () => {
                 <div className="intro_btn-action">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn">
-                      My Portfolio
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
+                      View Projects
                     </div>
                   </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
-                      Contact Me
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
+                      Hire Me
                     </div>
                   </Link>
                 </div>
@@ -71,8 +69,9 @@ export const Home = () => {
               <Col md={5} className="home-image order-first order-md-last">
                 <img
                   src={yourImg}
-                  alt="home pic"
+                  alt="Daniel Okweir Full Stack Software Engineer"
                   className="img-fluid"
+                  loading="lazy"
                 />
               </Col>
             </Row>
