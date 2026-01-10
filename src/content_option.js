@@ -60,8 +60,8 @@ const dataportfolio = [
     title: "Tuberculosis Patient Management System (TPMS)",
     description:
       "Final-year graduation project: a healthcare management system for tracking TB patients, appointments, and treatment progress. Implemented role-based access control, analytics dashboards, and secure APIs using React, Redux, Node.js, Express, and MongoDB.",
-    link: "",
-    github: "",
+    link: "https://tpms-iota.vercel.app/",
+    github: "https://github.com/Daniel-okwier/tpms",
   },
   {
     img: img1,
@@ -76,8 +76,8 @@ const dataportfolio = [
     title: "Zion Market Landing Page",
     description:
       "Redesigned and rebuilt a modern, conversion-focused marketplace landing page with instant search filtering, category navigation, and SEO optimization. Focused on advanced UI/UX patterns and performance using React, Tailwind CSS, and Vite.",
-    link: "",
-    github: "",
+    link: "https://zion-market-rouge.vercel.app/",
+    github: "https://github.com/Daniel-okwier/zion-market",
   },
 ];
 
