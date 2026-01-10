@@ -5,11 +5,7 @@ import img6 from './assets/images/zion.png';
 
 const logotext = "Dani.";
 
-const meta = {
-  title: "Daniel Okweir | Full-Stack Software Engineer",
-  description:
-    "Daniel Okweir is a Full-Stack Software Engineer specializing in scalable web applications, REST APIs, and modern UI/UX using React, Node.js, MongoDB, and MySQL.",
-};
+const meta = { title: "Daniel Okweir | Full-Stack Software Engineer", description: "Daniel Okweir is a Full-Stack Software Engineer from Gambella, Ethiopia, with an Anyuak heritage. He builds scalable, high-performance web applications and APIs using React, Node.js, MongoDB, MySQL, and modern frontend technologies.", };
 
 const introdata = {
   title: "Hi, I'm Daniel Okweir",
@@ -94,6 +90,7 @@ const contactConfig = {
 const socialprofils = {
   linkedin: "https://www.linkedin.com/in/daniel-okweir/",
   github: "https://github.com/Daniel-okwier",
+    x: "https://x.com/DanielOkwier"
 };
 
 export {
