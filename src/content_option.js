@@ -1,110 +1,108 @@
-
 import img1 from './assets/images/al1.png';
-import img2 from './assets/images/eva.png';
-import img3 from './assets/images/ama.png';
-import img4 from './assets/images/donation.png';
-
-
-
-
-
+import img4 from './assets/images/DONA.png';
+import img5 from './assets/images/tpms.png'; 
+import img6 from './assets/images/zion.png'; 
 
 const logotext = "Dani.";
+
 const meta = {
-    title: "Daniel Okwier",
-    description: "I’m Daniel Okwier , a Full-stack developer",
+  title: "Daniel Okweir | Full-Stack Software Engineer",
+  description:
+    "Daniel Okweir is a Full-Stack Software Engineer specializing in scalable web applications, REST APIs, and modern UI/UX using React, Node.js, MongoDB, and MySQL.",
 };
 
 const introdata = {
-    title: " Hi, I'm Daniel Okwier",
-    description: "Passionate full-stack engineer crafting user-friendly online environments, turning ideas into reality with code.",
-    animated: {
-        first: "I love problem-solving",
-        second: "I code cool websites",
-        third: "I engineer robust applications.",
-    },
+  title: "Hi, I'm Daniel Okweir",
+  description:
+    "Full-Stack Software Engineer focused on building scalable applications, clean APIs, and high-impact digital products.",
+  animated: {
+    first: "I build scalable applications",
+    second: "I design modern user experiences",
+    third: "I solve real-world problems with code",
+  },
 };
 
 const dataabout = {
-    title: "About Me",
-    aboutme: "I am a passionate full stack developer with a strong foundation in both front-end and back-end technologies. My curiosity for learning drives me to explore new tools and frameworks, allowing me to adapt quickly to evolving challenges. I thrive in dynamic environments where I can grow as a professional while delivering impactful and efficient solutions. My technical skills include HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB and MySQL. I enjoy tackling complex problems and crafting seamless applications that enhance user experiences.",
+  title: "About Me",
+  aboutme:
+    "I am a Full-Stack Software Engineer with hands-on experience building production-ready web applications from concept to deployment. I specialize in React-based frontends, RESTful backend systems using Node.js and Express, and data-driven solutions powered by MongoDB and MySQL. I enjoy solving complex problems, optimizing performance, and delivering clean, maintainable code that creates real business value.",
 };
 
-
 const services = [
-    {
-        title: "Frontend Development",
-        description: "I specialize in creating engaging and user-friendly interfaces using HTML, CSS, and JavaScript, along with modern frameworks like React. My focus is on optimizing user experience, ensuring accessibility, and implementing responsive designs.",
-    },
-    {
-        title: "Backend Development",
-        description: "I excel in backend development, building efficient server-side applications using technologies like Node.js and Express.js. My expertise includes creating APIs, managing databases, and implementing robust security measures to ensure seamless functionality.",
-    },
-    {
-        title: "Fullstack Development",
-        description: "I offer comprehensive Fullstack Development services that integrate both frontend and backend capabilities. From designing interactive user interfaces to building scalable server-side solutions, I manage the entire development process to deliver high-quality web applications.",
-    },
+  {
+    title: "Frontend Engineering",
+    description:
+      "I build modern, accessible, and responsive user interfaces using React, Tailwind CSS, and modern JavaScript. My focus is on performance, usability, and clean component architecture.",
+  },
+  {
+    title: "Backend Engineering",
+    description:
+      "I design and implement secure, scalable backend systems using Node.js and Express, including REST APIs, authentication, and database architecture.",
+  },
+  {
+    title: "Full-Stack Solutions",
+    description:
+      "From frontend to backend and deployment, I deliver complete web solutions that are scalable, maintainable, and optimized for real-world use.",
+  },
 ];
 
-
 const dataportfolio = [
-
   {
     img: img4,
-    title: "Teawun-charity",
-    description: "Developed a responsive donation application that integrates an online payment system. Leveraged React.js to create a dynamic user interface, enabling users to make donations easily. Incorporated Node.js for server-side functionality and utilized MySQL for efficient data management. Styled with Tailwind CSS to ensure a modern and appealing design, providing a seamless experience for users donating through the Chapa payment gateway.",
+    title: "Donation Platform",
+    description:
+      "Designed and developed a secure full-stack donation platform with authentication, transaction tracking, and admin management. Integrated Chapa payment gateway, built REST APIs with Node.js and Express, and used MySQL for reliable data storage. Optimized frontend performance using React and Tailwind CSS.",
     link: "",
-    github: "https://github.com/Daniel-okwier/Teawun-Charity/tree/newbranch"
+    github: "https://github.com/Daniel-okwier/Teawun-Charity/tree/newbranch",
   },
-
   {
-    img: img1, 
-    title: "Anyuak E-learning",
-    description: "Created an online learning platform with high school courses in the local language. Utilized React.js for the frontend, Material-UI and Bootstrap for design, Vite for builds, and deployed on Vercel. Implemented GitHub Actions for CI/CD and automated testing.",
+    img: img5,
+    title: "Tuberculosis Patient Management System (TPMS)",
+    description:
+      "Final-year graduation project: a healthcare management system for tracking TB patients, appointments, and treatment progress. Implemented role-based access control, analytics dashboards, and secure APIs using React, Redux, Node.js, Express, and MongoDB.",
+    link: "",
+    github: "",
+  },
+  {
+    img: img1,
+    title: "Anyuak E-Learning Platform",
+    description:
+      "Built an online learning platform supporting local-language education with adaptive learning features, course management, and student dashboards. Developed using React, Vite, and Tailwind CSS with CI/CD pipelines and cloud deployment.",
     link: "https://anyuakonline.vercel.app/",
-    github: "https://github.com/Daniel-okwier/AnyuakE-learning"
-},
+    github: "https://github.com/Daniel-okwier/AnyuakE-learning",
+  },
   {
-    img: img2, 
-    title: "Discussion Forum",
-   description: "Participated in the development of a full-stack forum web app with user registration, thread creation, and comment posting. Focused on the React frontend, while Node.js and MySQL powered the backend for efficient data storage.",
-    link: "https://evangadi-forum-dani.netlify.app/",
-    github: "https://github.com/Daniel-okwier/Evangadi-forum-backend"
-},
-  {
-    img: img3, 
-    title: "Amazone-clone",
-    description: "Cloned the popular Amazon e-commerce app to showcase full-stack development skills. Implemented secure payment processing with Stripe API and created a dynamic product catalog featuring search, filtering, and sorting. Utilized Firebase for backend services, including user authentication.",
-    link: "https://amazon-clone-dani.netlify.app/",
-    //github: "https://github.com/yourname/project1"
-  }
+    img: img6,
+    title: "Zion Market Landing Page",
+    description:
+      "Redesigned and rebuilt a modern, conversion-focused marketplace landing page with instant search filtering, category navigation, and SEO optimization. Focused on advanced UI/UX patterns and performance using React, Tailwind CSS, and Vite.",
+    link: "",
+    github: "",
+  },
 ];
 
 const contactConfig = {
   YOUR_EMAIL: process.env.REACT_APP_CONTACT_EMAIL,
   YOUR_FONE: process.env.REACT_APP_CONTACT_PHONE,
-  description: "Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!",
-
-  // EmailJS Configuration
-  YOUR_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+  description:
+    "Interested in working together or discussing opportunities? Let’s connect.",
+  YOUR_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
   YOUR_TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-  YOUR_USER_ID: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+  YOUR_USER_ID: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
 };
 
 const socialprofils = {
-    linkedin: "https://www.linkedin.com/in/daniel-okwier-12b90621b/",
-    github: "https://github.com/Daniel-okwier",
-    facebook: "https://facebook.com",
-    tiktok: "https://www.tiktok.com/@hvsslex?lang=en",
-    youtube: "https://www.youtube.com/@HvssleX"
+  linkedin: "https://www.linkedin.com/in/daniel-okweir/",
+  github: "https://github.com/Daniel-okwier",
 };
+
 export {
-    meta,
-    dataabout,
-    dataportfolio,
-    services,
-    introdata,
-    contactConfig,
-    socialprofils,
-    logotext,
+  meta,
+  dataabout,
+  dataportfolio,
+  services,
+  introdata,
+  contactConfig,
+  socialprofils,
+  logotext,
 };
