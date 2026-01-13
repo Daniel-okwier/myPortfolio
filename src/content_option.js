@@ -48,8 +48,8 @@ const dataportfolio = [
     title: "Donation Platform",
     description:
       "Designed and developed a secure full-stack donation platform with authentication, transaction tracking, and admin management. Integrated Chapa payment gateway, built REST APIs with Node.js and Express, and used MySQL for reliable data storage. Optimized frontend performance using React and Tailwind CSS.",
-    link: "",
-    github: "https://github.com/Daniel-okwier/Teawun-Charity/tree/newbranch",
+    link: "https://charity-app-gules.vercel.app/",
+    github: "https://github.com/Daniel-okwier/charity-app",
   },
   {
     img: img5,
