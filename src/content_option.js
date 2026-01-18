@@ -64,7 +64,7 @@ const dataportfolio = [
     title: "Anyuak E-Learning Platform",
     description:
       "Built an online learning platform supporting local-language education with adaptive learning features, course management, and student dashboards. Developed using React, Vite, and Tailwind CSS with CI/CD pipelines and cloud deployment.",
-    link: "https://anyuakonline.vercel.app/",
+    link: "https://anyuak-elearning.vercel.app",
     github: "https://github.com/Daniel-okwier/AnyuakE-learning",
   },
   {
